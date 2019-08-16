@@ -11,7 +11,7 @@
     <div class="main-page-block-info_programme">
         <div class="container">
             <div class="row">
-                <h2>Все флаги в гости будут к нам!</h2>
+                <h2 class="w-100 mt-5 mb-5">Все флаги в гости будут к нам!</h2>
                 <br>
                 <br>
                 <div class="col-lg-3 col-md-3 col-sm-6">
@@ -110,7 +110,7 @@
     <div class="main-page-schedule">
         <div class="container">
             <div class="row">
-                <p class="main-page-schedule_title">Программа фестиваля</p>
+                <p class="main-page-schedule_title w-100">Программа фестиваля</p>
                 {* <table align="center">
                     <tr>
                         <td> *}

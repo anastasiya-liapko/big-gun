@@ -13,20 +13,20 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="main-page-footer_phone">
                         <p class="main-page-footer_phone-number">
-            <a href="tel:+74959740786">
-                <img class="main-page-footer_phone-icon" src="src/img/tel.png" alt="Телефон">
-                +7 (495) 974-07-86
-            </a>
-            </p>
+                            <a href="tel:+74959740786">
+                                <img class="main-page-footer_phone-icon" src="src/img/tel.png" alt="Телефон">
+                                +7 (495) 974-07-86
+                            </a>
+                        </p>
                     <!--	<a class="main-page-footer_phone-call-back" href="#">Заказать звонок</a>   -->
                     </div>
                     <div class="main-page-footer_email">
                         <p class="main-page-footer_email-title">
-            <a class="main-page-footer_email-title" href="mailto:info@big-gun.ru">
-                <img class="main-page-footer_email-icon" src="src/img/mail.png" alt="Эл. почта">
-                info@big-gun.ru
-            </a>
-            </p>
+                            <a class="main-page-footer_email-title" href="mailto:info@big-gun.ru">
+                                <img class="main-page-footer_email-icon" src="src/img/mail.png" alt="Эл. почта">
+                                info@big-gun.ru
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
@@ -45,8 +45,6 @@
                 </div>
             </div>
         </div>
-
-        <button style="display:none" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Опрос</button>
 
         <!-- Yandex.Metrika counter -->
         <script type="text/javascript" >
@@ -85,13 +83,25 @@
     </footer>
 </div>
 
+{* <button style="display:none" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Опрос</button> *}
 
+<div id="broadcast" class="broadcast__button">
+    <a id="ticket--button" href="/?controller=broadcast">Трансляция с площадки</a>
+</div>
 
-<script src="src/js/jquery-3.1.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="src/js/jquery.flexslider-min.js"></script>
+<script src="src/js/jquery.colorbox-min.js"></script>
 <script src="src/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="src/js/script.js"></script>
+<script src="src/js/gallery.js"></script>
+
+{* {include file='modal-opros.tpl'} *}
+
 
 	{* <?php if (false) { ?>
 		

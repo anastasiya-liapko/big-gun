@@ -3,7 +3,7 @@
 <div class="image-gallery">
     <div class="container">
         <div class="row">
-            <h1 class="image-gallery-title">Участники</h1>
+            <h1 class="image-gallery-title w-100">Участники</h1>
             <h1>Совсем скоро мы объявим первых участников <strong>BIG GUN 2020</strong>!</h1>
             <p>
                 {* <br />

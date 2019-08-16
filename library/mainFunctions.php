@@ -20,6 +20,8 @@ function loadPage($smarty, $controllerName, $actionName = 'index')
     $function($smarty);
 }
 
+;
+
 /**
   * загрузка шаблона
   *
@@ -31,6 +33,8 @@ function loadTemplate($smarty, $templateName)
 {
     $smarty->display($templateName . TemplatePostfix);
 }
+
+;
 
 /**
   * функция отладки. Останавливает работу программы выводя значениепеременной $value
@@ -46,3 +50,29 @@ function d($value = null, $die = 1)
 
     if($die) die;
 }
+
+;
+
+/**
+  * функция получения фото/видео для галереи
+  *
+  * @param variant $value переменная для вывода ее на страницу
+  */
+
+function getAlbums($type, $year) 
+{
+    $type === null ? $type = 'Photo' : '';
+    $year === null ? $year = 2019 : '';
+
+    $array = [];
+    $array['type'] = $type;
+
+    for ($i = 1; $i <= 10; $i++) {
+        $array['items'][$i] = $year . '-' . $i;
+    };
+
+    return $array;
+
+}
+
+;

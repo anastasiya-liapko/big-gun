@@ -3,7 +3,7 @@
 <div class="image-gallery">
     <div class="container">
         <div class="row">
-            <h1 class="image-gallery-title">О фестивале</h1>
+            <h1 class="image-gallery-title w-100">О фестивале</h1>
                 <p style="text-align: center; font-size: 24px;">
                     В 2020 году состоится второй международный Heavy Metal фестиваль <strong>«BIG GUN»</strong>!<br>
                     Четыре дня, наполненных любимой музыкой, безумным драйвом и позитивом! На одной сцене выступят как именитые кумиры миллионов, так и новые для российских слушателей коллективы!<br>

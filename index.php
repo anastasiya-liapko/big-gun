@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Europe/Moscow');
 
 include_once 'config/config.php'; // инициализация настроек
 // include_once 'config/db.php'; // инициализация базы данных
