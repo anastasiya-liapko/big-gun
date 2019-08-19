@@ -9,7 +9,7 @@
             </h1>
             
             {$data = [2019, 2018, 2017, 2016, 2015]}
-            <div class="gallery__pagination pagination row justify-content-end align-items-center mb-5">
+            <div class="gallery__pagination pagination row justify-content-center justify-content-sm-end align-items-center mb-5">
                 <button class="pagination__button prev pagination__prev icon-prev" type="button">
                     <i class="fas fa-chevron-circle-left"></i>
                 </button>

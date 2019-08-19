@@ -296,16 +296,19 @@ li.head-menu-list-mobile-menu-btn{
     font-family: 'PFDinTEXT Pro', sans-serif, Helvetica, Arial;
     margin: 0 20px 10px;
 }
-.main-page-schedule{
+.main-page-schedule,
+.main-page-photo{
     background: url("../img/asphalt-bg-lg.jpg") no-repeat 0 50%;
     background-size: cover;
     padding-bottom: 64px;
     background-attachment: fixed;
 }
-.main-page-schedule_title{
+.main-page-schedule_title,
+.main-page-photo_title{
     color: #ebc9a6;
     font-size: 48px;
     font-family: 'PFDinTEXTcond Pro', sans-serif, Helvetica, Arial;
+    margin-bottom: 0;
     padding: 45px 0 44px;
     text-transform: uppercase;
 }
@@ -331,15 +334,29 @@ li.head-menu-list-mobile-menu-btn{
     color: #ebc9a6;
     margin-right: 5px;
 }
-.main-page-our-partners{
+.main-page-our-partners,
+.main-page-video{
     text-align: center;
 }
-.main-page-our-partners_title{
+.main-page-video {
+    padding-bottom: 64px;
+}
+.main-page-our-partners_title,
+.main-page-video_title{
     color: #000000;
     font-size: 48px;
     font-family: 'PFDinTEXTcond Pro', sans-serif, Helvetica, Arial;
     margin: 45px 0 27px;
     text-transform: uppercase;
+}
+.main-page-video_title{
+    margin: 45px 0 40px;
+}
+.main-page-video_items .gallery-items-block_description {
+    margin: 0;
+    padding: 16px 30px 23px;
+    color: #ffffff;
+    background-color: #000000;
 }
 .main-page-our-partners_image{
     max-width: 720px;
@@ -1171,3 +1188,22 @@ li.head-menu-list-mobile-menu-btn{
 .g-recaptcha > div {
     margin: 0 auto;
 }
+
+@media (max-width: 575px) {
+    .main-page-our-partners h1 {
+        font-size: 2.2rem;
+    }
+    .gallery-title__item {
+        width: 100px;
+        font-size: 30px;
+    }
+    .gallery-items-block {
+        width: 290px;
+    }
+    .gallery__pagination {
+        width: 290px;
+    }
+    .pagination__year {
+        width: 50%;
+    }
+};

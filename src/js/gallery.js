@@ -3,7 +3,19 @@
 $(function() {
     if ($("#js-gallery")[0] !== undefined) {
 
-    $('a.gallery-items-block_link').colorbox();
+
+    // var checkHash = function () {
+    //     console.log(window.location.hash === '')
+    //     if (window.location.hash === '') {
+            
+    //     } else {
+    //         type = window.location.hash.split('#').pop().charAt(0).toUpperCase() + window.location.hash.slice(2);
+    //         removeActiveClass('.gallery-title__item');
+    //         $('.gallery-title__item[data-type="' + type + '"').addClass('active');
+    //     }
+    // }
+
+    // checkHash();
 
 
     // init slick
@@ -13,7 +25,15 @@ $(function() {
 		dots: false,
         focusOnSelect: true,
 		prevArrow: $('.pagination__prev'),
-		nextArrow: $('.pagination__next'),
+        nextArrow: $('.pagination__next'),
+        responsive: [
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
 
@@ -45,8 +65,11 @@ $(function() {
                 removeActiveClass(elem);
                 $(e.target).addClass('active');
                 getAlbum();
+                window.location.hash = '';
             });
         });
+
+        
     };
 
     checkAlbum('.gallery-title__item');
@@ -57,7 +80,7 @@ $(function() {
     var getAlbum = function () {
         var type = $('.gallery-title__item.active').attr('data-type'),
             year = $('.pagination__year-slider .slick-current').text(),
-            ajaxURL = 'ajax-handler.php',
+            ajaxURL = 'ajax-handler.php',   
             data = {
                 'type': type,
                 'year': year,
@@ -83,6 +106,8 @@ $(function() {
                     fragment.appendChild(templateElement);
                     $('#js-gallery .gallery-items').append(fragment);
                 });
+
+                $(".gallery-items-block_link").colorbox({rel:'gallery-items-block_link'});
             });
     };
 

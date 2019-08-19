@@ -554,4 +554,50 @@
             <br>                
         </div>
     </div>
+
+    {$data = [2019, 2018]}
+    <div class="main-page-photo">
+        <div class="container">
+            <p class="main-page-photo_title w-100">Фото</p>
+
+            <div class="main-page-photo_items gallery-items">
+                {foreach $data as $elem}
+                    <div class="gallery-items-block">
+                        <div class="gallery-items-block_image">
+                            <a class="gallery-items-block_link cboxElement">
+                                <img width="362" height="198" src="../src/img/galery1.jpg" class="attachment-post-thumbnail size-post-thumbnail colorbox-1639  wp-post-image" alt="">  
+                            </a>
+                        </div>
+                        <p class="gallery-items-block_description">U.D.O. на BIG GUN 2019</p>
+                    </div>
+                {/foreach}
+            </div>
+        </div>
+
+        <a href="/?controller=gallery#photo" class="wpcf7-form-control wpcf7-submit">смотреть еще</a>
+    </div>
+
+    <div class="main-page-video">
+        <div class="container">
+            <p class="main-page-video_title w-100">Видео</p>
+
+            <div class="main-page-video_items gallery-items">
+                {foreach $data as $elem}
+                    <div class="gallery-items-block">
+                        <div class="gallery-items-block_image">
+                            <a class="gallery-items-block_link cboxElement">
+                                <img width="362" height="198" src="../src/img/galery1.jpg" class="attachment-post-thumbnail size-post-thumbnail colorbox-1639  wp-post-image" alt="">  
+                                <div class="gallery-items-block_link-btn">
+                                    <div class="gallery-items-block_link-btn-triangle"></div>
+                                </div> 
+                            </a>
+                        </div>
+                        <p class="gallery-items-block_description">U.D.O. на BIG GUN 2019</p>
+                    </div>
+                {/foreach}
+            </div>
+
+            <a href="/?controller=gallery#video" class="wpcf7-form-control wpcf7-submit">смотреть еще</a>
+        </div>
+    </div>
 </div>

@@ -56,13 +56,14 @@ function d($value = null, $die = 1)
 /**
   * функция получения фото/видео для галереи
   *
-  * @param variant $value переменная для вывода ее на страницу
+  * @param string $type значение 'Photo' или 'Video'
+  * @param string $year год
   */
 
 function getAlbums($type, $year) 
 {
     $type === null ? $type = 'Photo' : '';
-    $year === null ? $year = 2019 : '';
+    $year === null ? $year = '2019' : '';
 
     $array = [];
     $array['type'] = $type;
