@@ -41,13 +41,19 @@
                                 <a href="/?controller=about">О фестивале</a>
                             </li>
                             <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39">
+                                <a href="/?controller=posts">Новости</a>
+                            </li>
+                            <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39">
+                                <a href="/?controller=press">СМИ о нас</a>
+                            </li>
+                            <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39">
                                 <a href="/?controller=members">Участники</a>
                             </li>
                             <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38">
                                 <a href="/?controller=rules">Правила</a>
                             </li>
                             <li id="menu-item-1620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1620">
-                                <a href="/?controller=gallery">Галерея</a>
+                                <a href="/?controller=gallery#photo">Галерея</a>
                             </li>
                             <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37">
                                 <a href="/?controller=feedback">Обратная связь</a>

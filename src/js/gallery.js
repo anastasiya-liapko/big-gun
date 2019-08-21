@@ -3,19 +3,9 @@
 $(function() {
     if ($("#js-gallery")[0] !== undefined) {
 
-
-    // var checkHash = function () {
-    //     console.log(window.location.hash === '')
-    //     if (window.location.hash === '') {
-            
-    //     } else {
-    //         type = window.location.hash.split('#').pop().charAt(0).toUpperCase() + window.location.hash.slice(2);
-    //         removeActiveClass('.gallery-title__item');
-    //         $('.gallery-title__item[data-type="' + type + '"').addClass('active');
-    //     }
-    // }
-
-    // checkHash();
+    
+    // add active class on photo or video button
+    $('.gallery-title__item[data-type="' + window.location.hash.split('#').pop() + '"').addClass('active');
 
 
     // init slick
@@ -62,14 +52,12 @@ $(function() {
         $(elem).each(function (e) {
             
             $(this).on('click', function (e) {
+                elem === '.gallery-title__item' ? window.location.hash = $(e.target).attr('data-type') : '';
                 removeActiveClass(elem);
                 $(e.target).addClass('active');
                 getAlbum();
-                window.location.hash = '';
             });
         });
-
-        
     };
 
     checkAlbum('.gallery-title__item');
@@ -78,7 +66,7 @@ $(function() {
 
     // get picked photos/videos
     var getAlbum = function () {
-        var type = $('.gallery-title__item.active').attr('data-type'),
+        var type = window.location.hash.split('#').pop().charAt(0).toUpperCase() + window.location.hash.slice(2),
             year = $('.pagination__year-slider .slick-current').text(),
             ajaxURL = 'ajax-handler.php',   
             data = {

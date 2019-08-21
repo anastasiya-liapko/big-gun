@@ -574,7 +574,7 @@
             </div>
         </div>
 
-        <a href="/?controller=gallery#photo" class="wpcf7-form-control wpcf7-submit">смотреть еще</a>
+        <a href="/?controller=gallery#photo" class="wpcf7-form-control wpcf7-submit button-more button-more_white">Cмотреть еще</a>
     </div>
 
     <div class="main-page-video">
@@ -597,7 +597,7 @@
                 {/foreach}
             </div>
 
-            <a href="/?controller=gallery#video" class="wpcf7-form-control wpcf7-submit">смотреть еще</a>
+            <a href="/?controller=gallery#video" class="wpcf7-form-control wpcf7-submit button-more button-more_black">Cмотреть еще</a>
         </div>
     </div>
 </div>

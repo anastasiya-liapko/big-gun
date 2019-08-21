@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row flex-column">
             <h1 class="gallery-title d-flex justify-content-center">
-                <span class="gallery-title__item text-right active" data-type="Photo">Фото</span>
-                <span class="gallery-title__item ml-5 text-left" data-type="Video">Видео</span>
+                <span class="gallery-title__item text-right" data-type="photo">Фото</span>
+                <span class="gallery-title__item ml-5 text-left" data-type="video">Видео</span>
             </h1>
             
             {$data = [2019, 2018, 2017, 2016, 2015]}
