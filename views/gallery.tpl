@@ -57,11 +57,15 @@
 <template id="js-templateGalleryVideo" style="display: none">
     <div class="gallery-items-block">
         <div class="gallery-items-block_image">
-            <a class="gallery-items-block_link cboxElement" href="../src/img/galery1.jpg">
-                <img width="362" height="198" src="../src/img/galery1.jpg" class="attachment-post-thumbnail size-post-thumbnail colorbox-1639  wp-post-image" alt=""> 
+            <a class="gallery-items-block_link cboxElement" href="../src/video/U.D.O.-na-Big-Gun.mp4">
+                {* <img width="362" height="198" src="../src/img/galery1.jpg" class="attachment-post-thumbnail size-post-thumbnail colorbox-1639  wp-post-image" alt=""> 
                 <div class="gallery-items-block_link-btn">
                     <div class="gallery-items-block_link-btn-triangle"></div>
-                </div> 
+                </div>  *}
+                <video preload="auto" controls="controls" width="100%">
+                    <source src="../src/video/U.D.O.-na-Big-Gun.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    Тег video не поддерживается вашим браузером.
+                </video>
             </a>
         </div>
         <p class="gallery-items-block_description">U.D.O. на BIG GUN 2019</p>

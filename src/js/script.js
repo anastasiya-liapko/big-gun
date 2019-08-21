@@ -1,4 +1,7 @@
 (function($){
+    // $(".gallery-items-block_link").colorbox({rel:'gallery-items-block_link'});
+
+
     $('.main-page-top_flexslider').flexslider({
         animation: "slide",
         directionNav: true,

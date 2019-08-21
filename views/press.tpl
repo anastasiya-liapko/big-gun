@@ -8,9 +8,11 @@
             {$data = [1, 2, 3, 4, 5]}
             {foreach $data as $elem}
                 <a href="#" class="page-press__post d-flex flex-column mb-5">
-                    <div class="d-flex align-items-end justify-content-between">
-                        <p class="page-press__post-source">Источник</p>
-                        <p class="page-press__post-date">21.08.2019</p>
+                    <div class="d-flex align-items-center justify-content-between mb-3 mr-3">
+                        <div class="page-press__post-source mb-2">
+                            <img src="../src/img/newspaper.png" alt="">
+                        </div>
+                        <p class="page-press__post-date mb-0">21.08.2019</p>
                     </div>
                     <p class="page-press__post-title mb-0">В 2020 году состоится второй международный Heavy Metal фестиваль «BIG GUN»!
                     Четыре дня, наполненных любимой музыкой, безумным драйвом и позитивом!

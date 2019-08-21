@@ -555,12 +555,64 @@
         </div>
     </div>
 
-    {$data = [2019, 2018]}
+    {$data = [1, 2, 3, 4]}
+    <div class="main-page-news">
+        <div class="overlay"></div>
+        <div class="container">
+            <p class="main-page-news_title w-100">Новости</p>
+
+            <div class="page-news__news-wrapper d-flex flex-column flex-md-row flex-wrap">
+            
+            {foreach $data as $elem}
+                <a href="/?controller=post&id={$elem}" class="page-news__news-item d-flex flex-column flex-sm-row">
+                    <div class="page-news__news-item-img flex-shrink-0">
+                        <img src="../src/img/galery1.jpg" alt="">
+                    </div>
+                    <div class="page-news__news-item-descr">
+                        <p class="page-news__news-item-date text-left">21.08.2019</p>
+                        <p class="page-news__news-item-title text-left mb-0">В 2020 году состоится второй международный Heavy Metal фестиваль «BIG GUN»!
+                        </p>
+                    </div>
+                </a>
+            {/foreach}
+        </div>
+        </div>
+
+        <a href="/?controller=posts" class="wpcf7-form-control wpcf7-submit button-more button-more_white">Cмотреть еще</a>
+    </div>
+
+
+    <div class="main-page-press">
+        <div class="container">
+            <p class="main-page-press_title w-100">СМИ о нас</p>
+
+            <div class="page-press__posts-wrapper d-flex flex-column flex-md-row flex-wrap">
+                {foreach $data as $elem}
+                    <a href="#" class="page-press__post d-flex flex-column mb-5">
+                        <div class="d-flex align-items-center justify-content-between mb-3 mr-3">
+                            <div class="page-press__post-source mb-2">
+                                <img src="../src/img/newspaper.png" alt="">
+                            </div>
+                            <p class="page-press__post-date mb-0">21.08.2019</p>
+                        </div>
+                        <p class="page-press__post-title text-left mb-0">В 2020 году состоится второй международный Heavy Metal фестиваль «BIG GUN»!
+                        Четыре дня, наполненных любимой музыкой, безумным драйвом и позитивом!
+                        </p>
+                    </a>
+                {/foreach}
+            </div>
+        </div>
+
+        <a href="/?controller=press" class="wpcf7-form-control wpcf7-submit button-more button-more_black">Cмотреть еще</a>
+    </div>
+
+
+    {$data = [1, 2, 3, 4, 5, 6, 7, 8]}
     <div class="main-page-photo">
         <div class="container">
             <p class="main-page-photo_title w-100">Фото</p>
 
-            <div class="main-page-photo_items gallery-items">
+            <div class="main-page-photo_items gallery-items main-page-gallery-items">
                 {foreach $data as $elem}
                     <div class="gallery-items-block">
                         <div class="gallery-items-block_image">
@@ -581,15 +633,15 @@
         <div class="container">
             <p class="main-page-video_title w-100">Видео</p>
 
-            <div class="main-page-video_items gallery-items">
+            <div class="main-page-video_items gallery-items main-page-gallery-items">
                 {foreach $data as $elem}
                     <div class="gallery-items-block">
                         <div class="gallery-items-block_image">
                             <a class="gallery-items-block_link cboxElement">
-                                <img width="362" height="198" src="../src/img/galery1.jpg" class="attachment-post-thumbnail size-post-thumbnail colorbox-1639  wp-post-image" alt="">  
-                                <div class="gallery-items-block_link-btn">
-                                    <div class="gallery-items-block_link-btn-triangle"></div>
-                                </div> 
+                                <video preload="auto" controls="controls" width="100%">
+                                    <source src="../src/video/U.D.O.-na-Big-Gun.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                    Тег video не поддерживается вашим браузером.
+                                </video>
                             </a>
                         </div>
                         <p class="gallery-items-block_description">U.D.O. на BIG GUN 2019</p>
